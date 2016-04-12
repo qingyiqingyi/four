@@ -1,0 +1,5 @@
+@import "index.css"; /*只能在css用@import导入样式表*/
+#div{
+    background: red;
+    opacity: 0.5;
+}

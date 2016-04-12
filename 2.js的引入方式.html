@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div{
+            height: 100px;
+        }
+    </style>   <!--为什么我们把style标签写在这里-->
+</head>
+<!--../上一级  ./相对路径 相对于我们html来找-->
+<link rel="stylesheet" href="./css/style.css">
+<body>
+<div id="div" style="width: 100px" onclick="alert('欢迎大家');">
+
+</div>
+<script>
+    /*
+    * css引入方式：
+    * 1.行内样式 :卸载我们标签里面的
+    * 2.内嵌样式 ：嵌套在页面里的吧
+    * 3.外链样式: 通过link属性
+    * 4.@import 导入式
+    *
+    *
+    * js的引入方式
+    * 1.行内样式 ： 将我们的js代码潜入我们的标签内
+    * 2.内嵌样式： 将我们的js代码内嵌到我们的页面里
+    * 3.外链样式： 用sript标签 引入我们的外链js表
+    *    扩展 document.write();
+    *
+    *    1.要先引入css  等待html加载完成后 在引入我们的js之后才能操作我们的元素
+    *    2.在引入标签的内 我们不可以写js代码，否则不执行
+    *
+    *
+    * */
+    alert("内嵌===大家辛苦了");
+</script>
+
+
+<script src="./js/index.js">
+    alert("我们不想好好学习");
+</script>
+<script>
+    var oDiv =document.getElementById('div');
+</script>
+</body>
+</html>
